@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
     <body>
-        
+    <div id="grid"> 
+    <div id="left-side">
+    <div id="input-box">  
+        <h1>Temperature Converter</h1>
+            <label><p>Input Temperature Here</p>
+                <input id="temperature" type="text" placeholder="00">
+            </label>
+            <label><p>C for Celsius, F for Fahrenheit</p>
+                <input type="text" id="temp-unit" placeholder="C or F">
+            </label>
+            <br>
+        <button type="button" id="convert">Convert</button>
+    </div>      
         <script src="https://code.jquery.com/jquery.min.js"></script>
+    </div>
+    <div id="right-side">
+        <p id="message">It is 
+            <br>900<br>
+            &deg;C</p>
+    </div>    
+    </div>       
+        <script src="temperature-function.js"></script>   
     </body>
 </html>    
