@@ -1,12 +1,13 @@
 html {
     font-family: 'Muli', sans-serif;
+    height: 100%;
 }
 
 #grid {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-    height: 40em;
+    height: 100%;
 }
 
 
@@ -18,7 +19,9 @@ html {
     right: 0;
     top: 0;
     height: 100%;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/564x/cd/44/f4/cd44f4373fbbf40adabe9e01ac68f5c2.jpg);
+    background-image: url(https://s-media-cache-ak0.pinimg.com/564x/2b/ec/0c/2bec0c338b27ee0e979f876e78e89ace.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.6;
     background-color:#e1aa41;
     box-shadow: -0.3em 0em 0.2em rgba(23, 22, 22, 0.35);
@@ -32,15 +35,26 @@ html {
     width: 10em;
     height: 3em;
     font-size: 18pt;
-    animation-name: example;
+    animation-name: color-change-reg;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+@keyframes color-change-cool {
+    from {background-color: blue;}
+    to {background-color: #0505b2;}
 }
+
+@keyframes color-change-reg {
+    from {background-color: green;}
+    to {background-color: #064306;}
+}
+
+@keyframes color-change-warm {
+    from {background-color: red;}
+    to {background-color: #890404;}
+}
+
 /*
 #convert:hover {
     background-color: #00ff9d;
@@ -65,8 +79,8 @@ input {
     color: aliceblue;
     text-align: center;
     margin: 20% 0 0 0;
-    font-size: 90pt;
-    text-shadow: 5pt 3pt 5pt red;
+    font-size: 70px;
+    text-shadow: 5pt 3pt 5pt #0f430f;
     text-transform: 
 }
 
